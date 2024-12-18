@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>$COZY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+<header>
+    <img src="logoloop.gif" alt="$COZY logo" class="logo">
+</header>
+
+
+<section class="user-info">
+    <p><span id="score">0</span></p>
+
+    <p><span id="username">@username</span></p>
+    <div id="wallet-address"></div> 
+</section>
+
+<div class="main-box">
+    <button class="wallet-button">CONNECT WALLET</button>
+    <div id="wallet-address"></div>
+        <div class="mining-box">
+            <h1 class="h1-mining">MINING $COZY</h1>
+            <button class="mining-button">START MINING</button>
+        </div>
+        
+        <div class="daily-box">
+            <h1 class="h1-daily">GET YOUR DAILY REWARD</h1>
+            <button class="daily-reward-button">CLAIM</button>
+        </div>
+</div>
+
+<nav class="nav">
+    <button class="nav-link" onclick="goHome()"><i class="fas fa-home"></i></button>
+    <button class="nav-link" onclick="goLeaderboard()"><i class="fas fa-trophy"></i></button>
+    <button class="nav-link" onclick="goFriends()"><i class="fas fa-users"></i></button>
+</nav>
+
+<script src="main.js"></script>
+</body>
